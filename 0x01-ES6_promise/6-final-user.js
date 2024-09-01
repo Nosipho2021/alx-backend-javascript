@@ -10,6 +10,7 @@ import uploadPhoto from './5-photo-reject.js';
  * @param {string} fileName - The name of the file to upload.
  * @returns {Promise<object[]>} A promise that resolves to an array of results.
  */
+
 export default function handleProfileSignup(firstName, lastName, fileName) {
   const signUpPromise = signUpUser(firstName, lastName);
   const uploadPromise = uploadPhoto(fileName);
